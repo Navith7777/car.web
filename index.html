@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <style>
+    button.btn.btn-primary {
+        background: red;
+    }
+    .card.pt-5 {
+        margin-left: 500px;
+        margin-top: -330px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .card.pt-2 {
+        /* Add any existing styles you have here */
+        
+        /* Add the box shadow */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    h1 {
+        text-align: center;
+    }
+    button.btn.btn-primary {
+        margin-left: 704px;
+    }
+    .card.pt-2 {
+        margin-left: 1220px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .card.pt-3 {
+        margin-left: 748px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .card.pt-5 {
+        margin-left: 500px;
+    }
+    .card.pt-3 {
+        margin-top: -465px;
+    }
+  </style>
+</head>
+
+  <body>
+    <h1>Hello, world!</h1>
+    <form class="row g-3 needs-validation" novalidate>
+        <div class="col-md-4">
+          <label for="validationCustom01" class="form-label">First name</label>
+          <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustom02" class="form-label">Last name</label>
+          <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustomUsername" class="form-label">Username</label>
+          <div class="input-group has-validation">
+            <span class="input-group-text" id="inputGroupPrepend">@</span>
+            <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+            <div class="invalid-feedback">
+              Please choose a username.
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <label for="validationCustom03" class="form-label">City</label>
+          <input type="text" class="form-control" id="validationCustom03" required>
+          <div class="invalid-feedback">
+            Please provide a valid city.
+          </div>
+        </div>
+        <div class="col-md-3">
+          <label for="validationCustom04" class="form-label">State</label>
+          <select class="form-select" id="validationCustom04" required>
+            <option selected disabled value="">Choose...</option>
+            <option>...</option>
+          </select>
+          <div class="invalid-feedback">
+            Please select a valid state.
+          </div>
+        </div>
+        <div class="col-md-3">
+          <label for="validationCustom05" class="form-label">Zip</label>
+          <input type="text" class="form-control" id="validationCustom05" required>
+          <div class="invalid-feedback">
+            Please provide a valid zip.
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+            <label class="form-check-label" for="invalidCheck">
+              Agree to terms and conditions
+            </label>
+            <div class="invalid-feedback">
+              You must agree before submitting.
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit">Submit form</button>
+        </div>
+      </form>
+      <div class="card pt-2" style="width: 18rem;">
+        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQBCAMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAFAgMEBgcAAQj/xABLEAABAwMCAgcEBgYGCQQDAAABAgMEAAURBiESMRNBUWFxgZEiMqGxBxRCcsHRFSNDUoKSJDNTYqLwFzRjc4OTstLhFiXC8URUhP/EABkBAQEBAQEBAAAAAAAAAAAAAAABAgMEBf/EACIRAQEBAAICAwACAwAAAAAAAAABEQIhEjEDE0FRcQQiYf/aAAwDAQACEQMRAD8AzuLb7opGbfNZlo/cC0q/wqpMhtTB4btY+DtcbSWz+VAW3W+IK5K7cYx6Uctt8ukYcMae6tsfs1rCx6KrQSm3WWX/AKvcFxl/uym8j+YV6vSF2LRehsInMjmuEsPfAe18KKjUEZzCbzZobhV9tKSwo/gamx4ulZKg8y7cbY8OTqU8YT/EnlU7VRlxXWnS04gpcHNChhQ8jvSAgJO+U99a9Ch3iYyG7ZqC06gj42Zm8Lqsdnte18aiz7Ow0SL3o+XCPW9b3CpPjwq2x4U1GcQJlxgOByBKdbWP3Fn5ddH4+sluHgvlsjTMbdIpAbc9RRJzSthmq4bbfmWHTyYuDRZPryqPN0PqCCyHRDVKi9TjGJDePFOauwWS06otUptLCbm60nkY11b6dvwCjuKsDVsivMKW1EcQysZLlucEllX3mzv8Kx0w2woh+KttQ+0yc4/hPKpEEzITvS2q6Ftwck8ZaV4ZOx8yKzitN/8ASsWW0pMJMeSgDduNgKT4sr5eWKrNw0Ghx0oikofP7NKeFX/LXz8iaUzr66xuiTqO3ty059l51PAsn+64OfkauFs1zY7qyliTJLaT+xuKOlQPBfMU7GUSLNdbW6tSAtSmd1lvIU2P7yDhSR3kYolbNXvBIauDKJbfIhY3FbMYMSay2tsdIy2ctrQr6y233pUPbR5UEuuiYFzbU90CV9rzKuPB78b+oJpv8inIg6e1AjhivpYdP7J05Hkeqhs/TF0tCA6zhyPnICjxtj7qhuk+lTbnoK4RuJ23uB9CeeNynxxy8wPGolu1LerC6huVxltQ9x3cKHcrrHqKCPFnNx3QhfFCd59G4BwKz2Hl57Z681NlW62XBKi8gxHtyXUp9hQ7Tty684x3ijkeZprUSOjfbTBeXzBA4CfDl6YqDO0bcbUkvWxSXY2eLhALjee3HNPiKaYpt103LgI6VSONkjiDzW6SDyOOw9o276DrYWg7pOO0bir3DuBiL4H0qhEqJwoktKJ5nI5E9Z2J680qdbbbLbUtaUxFkcZcawW8fvEDYDvG3fV0Z7jbYAikKbChsMeFWW66ffhZcUElnOOnQeJG/Li60+fxoK4wtHvJPaO/w7aqBqmyjmNu2vOEVOIPWCB86YcYz7u1URymk4pwjHPn2V5tQNkV5ThFJIoE11dXVMHV1dXVB5XV7XVApJIpeT/91IeiuxyBJacZP+0QU/OvA0DggjFaHseXIjjDDzqB2JWcenKpjF0cQviXHjrVn3wjo1+qMVE6BXZt213Qq6qA81d4D6k/W2HQocisJex5kBXxq1WXVT0ThRA1E80M/wBW6+rH8roUPjWb8CgOVepKh2+VTFbgnUDsxk/pWz2+4N81OBjcDtKm+MDzxS7ajTclzprO9cLY+T7SoD/SjzCDnHimsRZdWy4HGlrbWOSkKwR50XRqS5q4frbjU8J5fX2Uvkfxq9seShTBtX1KVcSUfW7PqFKf2cptKJA8xhQ9KB3PStpVxCdZ7lbFj9o1/SGx+NUyJrJKkhFxhrWgHn0vTDwCXeIpHcFCrbatdxglKWLq6yD+zfB4QOzCuIDyIqegNTot9RUrTt6iv9JzZS70a19xbVsrwOaCXKyS4CuC7WjoVj7baC0T/wDE+WK05F1g3dJMy3Q5yetbCcqA/h4vjipUIQ3G1ItV0mR2xsthzEllPdj2gkelNGPRS/b3g7abm9EWOSXSW/8AENqtEL6QrzAWhy9QkSU8hJbPAsj/AHiOfnVwf03HuDanFWqHLb5dPanuA+HDkj5VWZmjY7alLg3FURw825aC16qHsnzpos1r1zYrx0YkSOjeOyfrPsKHgtP/AIoxMs9vubJU6GnULOeNwJIUfvp2PnvWSXLStwhgvSYJLRG0hoApPfxJ9moMGddbKvpLbOkR0nbPFt59RHjTILtfPo1bQektylMLzkBfuk9x5fGgDDmptJvFBS90STugglJHh1eNGLL9J0mMAm5RUrT1rY9n1Ty+VXO3aj0/ekBtDzQUf2S9t/unb0xU9LKpzGoNP39HBdYoivr26VA9knv7aZmaLfZT9ZsEkPs540paORntAzkHvTv31bbxoC2XAqcZR0TpGQpr8uv41UHbDqLTKy/b31OspOSEnIPiDt61AFS9Itzv65pyKQSOJsez3gp+Yxg9eaQ7GtsxrK0pjcQz00ccTR71I+z5Yq0x9WwLgBG1HALb39slOD/n1pMvSEWahUvT85CgTnDa8Kz4Vr0M+uenno7YeQEqZJwl1slTZ7s9XgaCPRltk8Se/wAfDtq8SGLhZ5Cw424ycYWptOAR/eTyI8dqiOIhy0krbS0efGynKPEo5jyqypikOIB5io62yNxuKs060rbR0gSFNdTqDxIPn1HxoO6ypHVt3VZUoaew14alLbSe41HUkg1Q3iuIpRrygRXUvFJIoPK6uNdWcGrwdd2d0AS0PthXMKQFD4UVYOiLtzbtvGrmeEMq8yMVjCVU8l0jr2pi62wfRxp+cjjguvoyObLwcSPX86HyPood3+pXRtXYHmyk/CstjzXWF8bLrjav3m1FB9RVit2udRQuEM3mWUp+y+sPA/zg0wGZf0b6gj54IiJAHItOA/PFBJenZsMn67AlR8DdS2lBPqRj41aoH0vXFkgTGoD2P7pbPwJ+VWa3/S/anCPrUNTeeZbdCh8cVBkKbal1HG0sKT2jceopBtbv2cK8DW8o1HoK/qSqZDhuO9S3oiSoeChv6Ut7TOhJo/UyUxVHfaUUE+TmflV0fPq4TrZyoKSe+mylaeZz471vkj6LIjyCq23VXCeXGgKHqKCTvorurZPQmHI8+A/KmjIW3VtqSUKUlSdwUnBHnRiPqi7tFBdl/W0t7pE5AfKfBS8rT/CoVZZ30f3djPSWmTgdbWFD4ZNV6ZYSwrgeC2VfuvIKT8avSD0DXyw4hU+KtS0j+ubeKlDwK8rHk5Vut30gQZCUocnhWNuCY3nHmd/8RrKVWh4DKQFDuNMLiSGwQUqA7xUyK3mNItr+ZEZkx1EZU/b3SP5uE7/xGkybRbp6ekWYL/FycWj6u4f40eyr0NYQyp+OoLaW42oclNqII8COVGoOrb5EVxCat444SXwVKI73AQ55cWKmLq/3TQDABcbD8YnlxoCx5KR+VVeXoy5MFa46RIQncqZVx48ufwqbbPpIkRiC5E4BzJYc4M92BgeuTVji/SBZZYSJzPtjbjUzwqB7lJ/KplRS7bqDUFkVwNPOlpJ3ad9tI8jyq6Wj6T4z4Si7xS2rkXEe0Pz+dEw/pe+jH1xpSxsA6sEj+I4V8aHXD6O4cn2oTwCj7oHX8j86KKP27TGqEERlx1Onf2QEq8xVXn6HvFndEmzSXCE8ghZCgKFTtE3mAv8AVIcVg/YO9Kh6p1NZVBl51x5tO3RyQV4HnvQTWdWyGyImprcl5Cdg7w4UjwI5HwxTj2m7PfW1SLBMQh079Gs8Kk/576mI1nYrwkNX239EvHCHACR68/nTLmkLdOUJGmronj5pbC8qT6bj0pgqlwtN1s8n9e04lWMFaRjI7wdleFCn24svPSNlp3rKBjJ7Sk/hV8VdNRWZsx7zDTOhD2T0iAoDz6qaci6Y1An9Qv6hJPJt7dOe49VNGZTbW42CtJDiBvxI/Hs86GqbI6hWgXfTFytSi6EqWge64k/JQquPtMuHhfZ6JfakcPqBt6VqVLFacbHVzpkpI5ijEm3LQCpshQ7UnNQVoUPeGRWpWUUb14RTqkdgxSCDRTZFdSjXUwJFOCmwKcCagWnnsM1a7Pa4PQsOSEB4rSFEq3G++AOR86qYRVi0rLSiUI095DUUglLi8ngPYPypRo2nYaH1YRFbZjo4dktgbHPl1VM08V3JkJUxEcebwHQByV1jGacjaitEKNHYXJX9XSnACWFDpMczvg15pxix3KZNuVmemFDqipQDITwlW6iNwdzv3ZrCkS4MKY0+mTaWYi23CjjfCVgYPPc4oFLhiJa5L9oksqfZIWlmG4pPSJ7DhW3pintVacMySp6be1NRgcoZciKShsduxO/ed6iWm12CyJ+uInpuMpxpaW1NgIbbCgRxbnJP4U9RZ3XW9S1NB7C2VK36RDYZdQe/gwFeYz30+9qrUtjWgGdLLS89G70xWDjmML4gD3UcsqoEpR4ihWNykKHLtPZVnl2qHLjsMLjRXo3EHClTalhRHLB/znlXHj8v+2V6eXwScdir2f6SdQyDhlj64BzJiE/4kEAelW+Fqa7zmCqVpxtbX2imQk+oNDZpRalreMeS42sY6NtgpQgdgCR7P8woZb9X6fhpkLkWeeEhOC4XelSodhIPsjx2rrOfG3p5+XDlPcHZyNMPLSidp1lhxzf9XwoJ78oIzUBWldOS31JYauLKP3kLCkj1BNVO7/Sg+ocNlhRregbJWhlKlepGPhVYla+1G+o8V5mjP7jykj4YreMNRkaItcZCVrtciUlXWHyc+iARUZ3T+jmWULWzDZc4sOsSbkoKTjwOay1GtNRIVlF8uXnLcx6ZpxWr7tO4EXJ9qcjPuS4rL2fNaSR5GmDQJLP0csDKlQ1c8pbffUR5hWKYQn6N3ipEWJcZL2M8EZqQ5w+QJqFZNOWjU8QrRFVEk7cSWHFpB7xkqA8gKekaDuMGG7D+tOuwHV8akhfApteMcQUkkEY+yoY8OdZ6UiTatMBY4Id4ZxyKpDLeP4VnNeRW4URWLdqSdBB/ZuLaWg+KQrB8xVB1DpS5Whbi3m1SY6ckugZKAOfEOYx28qBstpWei2HGMIV39XrW0bvCvuo2EhMWfbbs2P2f9WtXkCUjyAp97WdrUpMbUlnXEWs4HSNhSFdvCRkHyNfP6FqbOUFTZz9kkEVY7VrK6Q2/q80oukFWAuLPHSAjuUckd3PHVvWfFWuf+n9KXtJNtmtpWeSULHyO9CZ/0dT4p47dK4sHYZKD8aqTUCHfGFSNLKcTJbSVOWx1eXQBzLZJJUO7Oe81Gg6rvduJRGuclKeXRqVxp/lVmmU1alXbV9iUBM4n2gMES2yvb7/vD+akm86buw/90grt8hX7Vn3fgB8vOmYH0pXFscE+HGlI7UDoz6bj4VMOoNF3r/XbeuE8rcraGM+aefmKYunIsO7wmS7p65t3CKebPEF7d6TnFDZb9qnq6O6QVW+QTjjQPZJ8PyqR/wClojyvrGmr22o80jpOBQPiKYlytRWz9Xe4Sbgx+8+37RH304PrmoAk/TchhJegPCQ0ORQrNV+QjhJD7QB7eurezMs7q+ODIkWp8/Zc9ps93ZXT4xfZKpkVLzf/AOxEwceKasMUJ2Mn7CvWoi28e9tVjmWj3nITgdSNyBzHlzoM6lQ9lxPjWtZDVp4eddUhxNdWhESadSaaFLBrIkIOaMQDBWw2l4KZWlR41gFXH2cuygiT3ZpSOk5ZWd+WaDQbWdLNhP1i4SM5zhUErx4Haj0WLovKnmbiklZ9oyIyk7+KSFDyNZT0jyEA9KsA+H5VM+sFbCWnAOJPtBYHCVDsONqlg1ZGn9ESweG4Rgoj7M54fBwrok1bLDCZisR022XHTst12M3JU0APZzwpScd+/KsVQ44k7rI9amxrpNiqyxJUkjYd1Y5cPLjjXHll1q10t/1Nnp7Hpuz3dnrVb1FhSf5VHHlVKusyzu4VdrPqm2OAAEJlKWkf8zehp1BOfUlTi0laRgOcPAs78+NOFfGnHdYX6I2pce83ADGyFOBwf4wa8/H/AB+XH916fv42dpEORY+kH6I1de4Dx2Ql5Cjv4oNHdYsSrVpR16+zmV3gOJMCZF/VOupPPiAxkY6zvVIV9I2qijAunCf3kMNg+vDTEWJcry6LhdFyJAO6S8SeP16q1Ph5+U2pfm45kPMIemMh+UlAdc9pXAgJB78DYHwpK7fxe6D5UQPGg+0Md2OVEIHQqQ6/JQnoGRxL4ts/3f8AP5V6deUFg6delEuOOIZjJHtOLGc+A6/lTyTYIquiaS7Lf5jicUc/wt4/6jSmlXDV9xEaPxJiZIbaGEBQA3Uo4wEgducbAZNE7i5F03GS1BtqLo4ndbr7jjbGevDSFBSx3uKJ7qCVYNZRbE+lK7YpttYwQStBI7gsHP8ANWqWi7RLpCEi3PIUM8KgvZXgc8qxO36wiznFRp1gZZSsHe1qUkgdeWXCttzwIB76Lsk6fcautleQq3vj2kJKi0pOcHAJ4kgE4KScpPI4NZsWVpWr4EuTZPrUEpRcInE4UrSCl5sDcK8Ac5BB2O9ZHPc01dHlqkQnrcsqz00fCgr7yR/5PfV+sGqJT99FquBaft0tojjICVNJdyEpGAOLAxknc89sUHVoeDCgsy79czGK0kltDRURjmT2DNX0KdK0oqU50touEKWCkcQ4w2oq8D1n55oTKsF2hbyLdJSO0I4vlmtCZ01pVToQnUKg4cYSWiFelWWxafhOIxbNSKeCeadikd2DTyMYfHW9GkpUy4ph9shSVJUUrQe0HmDWg2VyNrgdFKW1Hv6UZWooARMSOaiP7QdeOfOtDlaajriOuXBtqW02gqUPqYcKgBnYBWKz4ytMGalVt0tcPrDS8sqjvLYUFDrCUKVj0ppgRqK1Q9PSWG7wlahIBKFQ1BWEj7W536tqjTrCpg5RxLaICm3UDKVpO4UOsZGK0ZVjZ1NdmJt8gmHb2mlJREWVBanFe9xEe6nrHDjB7tqsPA61aEQbLcSlaEYYjvR2lhKRtwg8OCOoU1GEFiQyrLS1bcilW9EIWrL3b0lKZS1oGxbdHEMeBq4LVKfWlm+6ZEpa1+27FYEd1tPblI4Ce4il33Q1oajpkNXVUdpe2X0bIPYrB2PlTYqrK1PaZ211syEKPN2KeA+OOVJaRAUvpLLeFsL6kPKKT6inJeg7goFcB2HNT1dA6CT5Gq7NsNzgkmVBkN46+jJA8xVw0akyJLeFXOIHeyRF9lXicbH4d+agPttTG1FCw+QNyBhweI6/Gg6JExgZbdWnuB2pQuSlq/pDSVLH205QR6VcNMSWC0cjdB5GvamGU3ISQslRP2lbE+Pb48/GuqoAgUsCmxS0rx1VA+ypLawtQyB3ZqdEMN3CAXyrGAlKc/DG9Q0SE9ElC4zCwCTxFJCjntII27qdidGOkCVFpTgSjIPLffB9KloMCLEWDwylt4Vgh1ojB7Dz3oxbLW22lZbVAmLcA2faUoAd2CCKrrDiJtlLTsxLB6RJcU4CoK6hyrz9FT2+BTU6ICpPE2npxlackcQB6jimi5JssRw+1bo6VHmWZq28eTnHUgaThONksJmEgb4W05jzyn5VVmE6nhtpWuKp1GArhQ8QceCFA/A0ufcNSISXkwrsy0RlRksB0eSi2NvH1qCbLsxiFQcamIx1qjkj1FQHbXGkN8KrqhoHsiuOH0AqJD1hdoywoLjPj91bCU/FHCfjR636ntN0UEXGCW3eX9ctSfLiUaB63aXsEEJekKmPlSctvvxv1IP3RnPnt3UfjIlNpP1DULWP3HVbfyqBFeQVCJGUmwzlxwvfo1OcaSfBYUKZfnalRgqhQpPaRHQc/wAuKlWJjz8pDYXdrJBnM/20YBCvHKdvUVRtXzW3JItVrSpqO4viKCrJx3n/ADyq2wpsqdI6GbZ2IqeEqW+gFHCB8/Ws3kSzLuE2egbHiKMjkkDCfhinEqxm6taes0aLGSennpDjiutLIOEJ/iIKj5UgXdD7fA8ASocJyaTd7W7L1bIjMJJDCkR2+vCUJSnl5H1qNqTTMqAi4S1OoaRCfQx0SvZW4VJzxJHZWrZ6TOnsmwFpsTg6WycLSsHBQRyx31b2Gk3a0rdaaTwXGIuStpvYCU175A6uNOcjwPOqdfZz/wCiISVLfJUnJKkYq16Em/U7FZ3SgrAuTyT91SN/hT8ANovJhsTEODiSpSQtXXwn8jVy1bMduTFrvENtxbzrB4QMFKV59olPWQcns9rwqi22cpnTbCFMsPoS8r2XkcQ90Zxv3c6uumJDN3ZXbpfRIRL9qOr3UtyAMFHclaeVSisrTdnFha0OMrBJS402EKSe0FI50i23C52J0LjtBS8e0p1Lhz34Cgn1Bpy8Wa42t9bawtSUnHEVe1nvHb4bUKauklrHA8sdxOfgavSnm7pIYAS3IeawMDDhBqZE1VdYrgW3MUoA54HkpdSe7Cgfhion6ce5OJbWP7ySPkRSV3SOv34bR7khI+aDRFo/0iyuH2m50V3G64MjjbJ7eidzjwCqQxr+a9KbbV0T8kr40FyMpDm253QQM4H/AJqtifBIP9ESD35PyKaYhuB+5uuRgltLTBAUAfY3G+5PZ29dMFgfvtxliS/JdUXDxLKGThSuzhzkJzgdRA3ODyIi2X1x1ElXQK40JJeiLeWpt9knCgCokp5jr7xgim/rLn6WDLCSt1XE20gH31ghIGezOagWeQzIndEUJZc4HEA/eQoK+dMF0j6CukmI1Nsslp6K8ONlfTBK1JzsSOo9ters/wBINvR+pM5SB2LS4PRRI+FEtFaybtumY0SSIp6LICXmlkgc+Y2ok/r63KGBDhK+68tv/wCNSVcUa4TL02f/AH/TbMn951cMtr8lp2HpQR9WnZpPAiTb3Btgq6ZA7s+95mtEkaytrm2JTBPXFuAV8FpoPcZ9quYPSy0PH924QkKP/MRv57VZRQpFpcQnjivNyG+1pWfhXUTuVoYQC5EJbxuktO9Ij/uHqa9rSIrdvin3kOeqPzqU1b4fW2r+dA/GhKW89dK+rnuzUB1MCBjCm/V5FIctFrdJw4GiR/boIzjsP50DVGWRzNMrhKV1mmCYbM+yhbaZEZ5tQ5JdGc0Ok8ZS2xI2caTwp3zlOeXz9a4wV9QzTSorqRjhqYJTjq5DYkNuKTIQAlfCogkAYB9AKIi+XVpaZlvuMplX7RAdJCFdZwdsHn8KBcLqDsCCKUl15C+JOxIwdudUWtE636paMe6Mtxrt9iYynh6U/wB4D3vn2dlVy4wJdrkFmUnhUN0LSQUrH7yT1io3SHOeDBHIp2o6zqZx2EItyjtyW08lLTxY8tt+8EVBHtt6dY9hbhGOR6jVjiaidTzUaqbsm2kexb/a7UrUkehUr51HEkpV+rSUp7FKzQXW+6oc/RTrSFe26ODvwefwqpRRhhaOXGCKiOuqeV7Z2HKn2XPZ4TVwbRZbxbLffXJklpBVLS1IQrG5C0JJOfEkeVN6+csGo2xNdKUyEt+8NuWefbgH51RITrt7s6EREhy625soDI2MiPkn2e0oJVt2Gq+5KnPq6LoHyobKQEEnv2rMnereXWJl5vchwJY4zwNHhCTuBjqrRLPMYh2BtDrbaV22C5KewMZdWMJH4VR7Np1bKW5t3SvpSR9VgtjiefX1ZT9kDnv50q+TTFjuWxcpLkiQ4HJ6m1ewCPdaSe7rPbSoTa4rsi2MRWUlS/fIO2PHs2onGZENR4rpbiV7LaL/AL38WOff8+VOWGXpt2Anp3G3J5UAtmcotsoT2gJI6TwJHhVnF205bE9GRaTtkiPAZQn1USTS0hyJfY11jJi3xMe5N8kSGX0peT1YJJ4V+OQfvc6ad0rY3do1zABOzc1ji4e4KTg+hpK9YaXOMw4KsdrLH50y7rTSLacm2Qye6K2f+lRqdqV/o9iOe66jh/ejTME+TqT/ANVR5P0aKO8aS8O5aWznzSv8Kbc+kLTSP6mxxV9n6jeojn0nQk7RbAwn+Ej5Kq9oH3nRU+2MF1a0OJG3CgnJoFbl9E6W+PZawXOw78qOTfpKlSWlMptMItrHCUrW9uOzZygaJcOQmQoQEwHEo4mi0p5xKlZ2ThRVz7ScVexItVwQyiFIU0hxby3EL408QG+fXfauiKj/AKwIbSlMWOsF0Y9srBQB/iJ8qGWxwNoMaW06GSsOJcbAKm1Ac8HGQRsRkfnp2htJabvFvLT8mQsZDi2kvJbdUeorxnhA6kg95PVTRK0xZY9xsLD7VzitBXES0uGFqTknAJznlilzNMREpJcnsuDtRbCfkqrpAstkssP6rboiUNDfiVLc41HtJHP1oNdpMJsElpr+CMpR9VrI+FYbxQZ9kszef6S8SOpMPo/mqgkmDbUH9UuVxdpSkfiasF2vDCFKDaHlZ5ZWhA9EIHzqqTbotSvZQ2D2gEn1JNampTToYQT0S3xmuoc/JcX7yya6tMltqqU0oHnR+P8AR5el+87ER/xCfwolG+jS4qA47lDQfuqNS2LlVpkJVUtthtY6qtsb6Ln9i7f4ifCOf++i0f6NYSAOn1K0O3haSPmqpeS4oqILChvj0pZszS+RFaSzoLTbeOl1K6e0BbQ/A1Oa0lo5r3726v70lv8ABNY8q3JGROafB9zc1GXpxz9wVtybHolv/wDO4v8A+o/hSjatG/sypz7rq1VPsxfr38rB16de/sj8KZXp93rTjzFbq9p7TbuQ3FlHP7pcqE5oi0O7tWuU594q/E1J8y34Kw9yxOA5JHqKjOWhaPtJ9a3YaAjE4asif48fjTzf0fL6rXDQO8prX3f8Z+rP188riFP2057jSOhdSdtz3Gvotf0dqG6129gduD+VC5uh4LCSqTqKG2nsS0n86v2T+GfC/jDGFy4zqHY/SNutkKStsEFJ7iKsidYXN4JFxtrEwjmsoWhZ8SkgfCrfNsumY2ePUr7naGEJ/wC00HkjSbXuvXSUfvFP/bV8pUvHAV7UN3dQ61b4Me2od2cXFbIcWO9aiT8qCfo14+8oDH7ygKszs2xJH6mzuuf75/8A+6Y/TMdr/V7PDb+8Cr8q1P6ZV8W08lPNeHGKcRZ1KOxUr7jaj+FGl6hmD+qRGbH91kfjTC7xc185bgHYkACqIyNOvKGehkH/AIWPmafTp4o3cRwj/aPoT+FMOSJDv9Y+6rxWaaDOee/jQTP0fCb95+GCP9qtZ9BXcFuRsXOPuai/io1HSxS0s0D31uMgEIZkLz/aOpR8EpHzphySo+5HaSO1WVn4mnA1SVtp6qoVEK3FDicwOwAAVsn0XojMW916WocS1DAPYKxlpXCoCrRZ7i8hvgCiB41jm1xkbFeb1aY7RCTxK6uHqrNr9fWXCoIG1Qpkwls5JOarE97nvWZO2rcMXCZ0pVvQdxW9OvOZzUZSq6OZKzXUhRrqC8I07qp/37kU+Lx/CpTejLu4P6RfQ2f94s/iKpSrrcF+9OfP/ENNKlSFHK33j/xTU7VpEfQ7YA+tanx27n8V1Pb0tpRnH1zUoUev9akfnWTdIVe8SfvHNLS5jkBU8TWyR4P0cxvfugePc4T8hROPcvo6jEdG0t0j/ZOH51hyHyKktzFZ3JqXg6cebeWdYaPYx9WtSzjkehQPmaf/ANINtR/q1sHdxKCfkKwtqcrtNTWZij1mud42O08b7bG59Irv7KLHb8SVflUJ7X9xX7jjaPuNj8c1mzL6l9tT2EqXiuVtnuu3H4+F/Ftd1ldXTtMcHhhNRHdR3FzPHKfV4uGhjUfbJ51661wp5Vjy2t/XJOoTMu8hxJ43FnxUfzqvy5alE1NldeKEyOvNd+Eef5KiPLUrO9RVJqQvFNnhr0R5KZLdJ6PenuMUnpR2UQkM0sNAV50tJL3fQOBtIpWEjqqOXu+kF/vqiVxAV4XU1CU8aQXTQTFPd9MuO5qMXKQpdBJS5g1Piz1MjbFBuPFeh01MXRmRclKG6zQx6QVE5qOXSabUrNEKUremya4mkFVB4TXtIJrqBQNKzXldQegmlg11dQLBNOoJzXV1FiWyTRCOa6urHJ24DEQDI8aOREjAOK6uryc3v+MSR7tQ5iyM4ryurlx9uvL0AzHVZO9B33Vb711dXt4PnfIhrWo9dMlau2urq7PKQVHtpClntrq6qE8ZrzjPbXV1EecRpBUc11dQeFRxSSTXV1FJJNeEmurqDzJpJJrq6g8ya8JNdXUCSTikk11dQdXV1dUH/9k=" class="card-img-top" alt="...">
+        <div class="card-body pt-2">
+          <h5 class="card-title">CAR 1</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">An item</li>
+          <li class="list-group-item">A second item</li>
+          <li class="list-group-item">A third item</li>
+        </ul>
+        <div class="card-body">
+          <a href="#" class="card-link">Card link</a>
+          <a href="#" class="card-link">Another link</a>
+        </div>
+      </div> 
+      <div class="card pt-3" style="width: 18rem;">
+        <img src="car2.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">An item</li>
+          <li class="list-group-item">A second item</li>
+          <li class="list-group-item">A third item</li>
+        </ul>
+        <div class="card-body">
+          <a href="#" class="card-link">Card link</a>
+          <a href="#" class="card-link">Another link</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="3" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">An item</li>
+          <li class="list-group-item">A second item</li>
+          <li class="list-group-item">A third item</li>
+        </ul>
+        <div class="card-body">
+          <a href="#" class="card-link">Card link</a>
+          <a href="#" class="card-link">Another link</a>
+        </div>
+      </div>
+      <div class="card pt-5" style="width: 18rem;">
+        <img src="4" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">An item</li>
+          <li class="list-group-item">A second item</li>
+          <li class="list-group-item">A third item</li>
+        </ul>
+        <div class="card-body">
+          <a href="#" class="card-link">Card link</a>
+          <a href="#" class="card-link">Another link</a>
+        </div>
+      </div>
+      <form class="row g-3 needs-validation" novalidate>
+        <div class="col-md-4">
+          <label for="validationCustom01" class="form-label">First name</label>
+          <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustom02" class="form-label">Last name</label>
+          <input type="text" class="form-control" id="validationCustom02" value="Otto" >
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustomUsername" class="form-label">Username</label>
+          <div class="input-group has-validation">
+            <span class="input-group-text" id="inputGroupPrepend">@</span>
+            <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" req>
+            <div class="invalid-feedback">
+              Please choose a username.
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <label for="validationCustom03" class="form-label">City</label>
+          <input type="text" class="form-control" id="validationCustom03" required>
+          <div class="invalid-feedback">
+            Please provide a valid city.
+          </div>
+        </div>
+        <div class="col-md-3">
+          <label for="validationCustom04" class="form-label">State</label>
+          <select class="form-select" id="validationCustom04" required>
+            <option selected disabled value="">Choose...</option>
+            <option>...</option>
+          </select>
+          <div class="invalid-feedback">
+            Please select a valid state.
+          </div>
+        </div>
+        <div class="col-md-3">
+          <label for="validationCustom05" class="form-label">Zip</label>
+          <input type="text" class="form-control" id="validationCustom05" required>
+          <div class="invalid-feedback">
+            Please provide a valid zip.
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+            <label class="form-check-label" for="invalidCheck">
+              Agree to terms and conditions
+            </label>
+            <div class="invalid-feedback">
+              You must agree before submitting.
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <button class=".bg-success" type="submit">Submit form</button>
+        </div>
+      </form>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
